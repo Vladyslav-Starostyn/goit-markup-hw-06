@@ -505,13 +505,62 @@
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form" action="#">
-          <label for="name">Имя</label>
-          <input type="text" name="name" id="name" class="modal-input" />
-          <label for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel" class="modal-input" />
-          <label for="mail">Почта</label>
-          <input type="email" name="meil" id="mail" class="modal-input" />
-          <button type="submit">Отправить</button>
+          <div class="font-field">
+            <label class="modal-label" for="name">Имя</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="modal-input"
+                required
+                minlength="2"
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use
+                  href="./imedges/icon/symbol-defs.svg#icon-person-black"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="font-field">
+            <label class="modal-label" for="tel">Телефон</label>
+            <div class="input-wrap">
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                class="modal-input"
+                required
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use
+                  href="./imedges/icon/symbol-defs.svg#icon-phone-black"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="font-field">
+            <label class="modal-label" for="mail">Почта</label>
+            <div class="input-wrap">
+              <input type="email" name="meil" id="mail" class="modal-input" />
+              <svg class="input-icon" width="18" height="18">
+                <use
+                  href="./imedges/icon/symbol-defs.svg#icon-email-black"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="font-field">
+            <label class="modal-label" for="comment">Коментарий</label>
+            <textarea
+              name="comment"
+              placeholder="Введите текст"
+              class="modal-comment"
+              id="comment"
+            ></textarea>
+          </div>
+          <button class="modal-button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
