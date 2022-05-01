@@ -710,7 +710,7 @@ text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
 }
-.font-field {
+.form-field {
     margin-bottom: 10px;
 }
 .input-wrap {
@@ -781,4 +781,29 @@ color: #212121;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     cursor: pointer;
+}
+.form-link {
+    color: var(--accent-color);
+}
+.modal-check-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.check-ikon {
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border-radius: 2px;
+    border: 2px solid black;
+    fill: transparent;
+}
+.modal-check:checked + .modal-check-text svg {
+  fill: #FFFFFF;
+  background-color: var(--accent-color);
+  border: 1px solid transparent;
 }

@@ -505,7 +505,7 @@
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form" action="#">
-          <div class="font-field">
+          <div class="form-field">
             <label class="modal-label" for="name">Имя</label>
             <div class="input-wrap">
               <input
@@ -523,7 +523,7 @@
               </svg>
             </div>
           </div>
-          <div class="font-field">
+          <div class="form-field">
             <label class="modal-label" for="tel">Телефон</label>
             <div class="input-wrap">
               <input
@@ -540,7 +540,7 @@
               </svg>
             </div>
           </div>
-          <div class="font-field">
+          <div class="form-field">
             <label class="modal-label" for="mail">Почта</label>
             <div class="input-wrap">
               <input type="email" name="meil" id="mail" class="modal-input" />
@@ -551,7 +551,7 @@
               </svg>
             </div>
           </div>
-          <div class="font-field">
+          <div class="form-field">
             <label class="modal-label" for="comment">Коментарий</label>
             <textarea
               name="comment"
@@ -559,6 +559,23 @@
               class="modal-comment"
               id="comment"
             ></textarea>
+          </div>
+          <div class="">
+            <input
+              type="checkbox"
+              name="privasy-check"
+              class="modal-check visually-hidden"
+              id="modal-check"
+            />
+            <label class="modal-check-text" for="modal-check">
+              <svg class="check-ikon" width="16" height="15">
+                <use
+                  href="./imedges/icon/symbol-defs.svg#icon-icon-check"
+                ></use>
+              </svg>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="form-link" href="">Условия договора</a></label
+            >
           </div>
           <button class="modal-button" type="submit">Отправить</button>
         </form>
